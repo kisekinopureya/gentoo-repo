@@ -27,6 +27,7 @@ src_unpack() {
 }
 
 src_install() {
+	sed -i '/export mesa_glthread=true/a \n#VRR and Color Management\nexport STEAM_GAMESCOPE_VRR_SUPPORTED=1\nexport STEAM_GAMESCOPE_COLOR_MANAGED=1\n' "${WORKDIR}"/"${P}"/usr/share/gamescope-session/gamescope-session-script || die
 	cp -r "${WORKDIR}"/"${P}"/usr "${D}"/usr || die
 }
 
