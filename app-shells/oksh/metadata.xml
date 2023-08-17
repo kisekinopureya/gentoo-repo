@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="project">
+    <email>gokhan.ozdemir@kisekinopureya.info</email>
+    <name>Gökhan Özdemir</name>
+  </maintainer>
+  <use>
+    <flag name="lto">Build with Link Time Optimization (LTO)</flag>
+    <flag name="ksh">Install executable as ksh instead of oksh</flag>
+    <flag name="curses">Use curses library for screen clear</flag>
+    <flag name="small">Disable curses and extended history</flag>
+    <flag name="static">Statically link executables</flag>
+  </use>
+</pkgmetadata>
